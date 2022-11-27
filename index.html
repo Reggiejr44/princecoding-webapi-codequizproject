@@ -1,1 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Web title of my code quiz-->
+    <title>Prince's Code Quiz Project</title>
+    <!--Links HTML to CSS to be styled-->
+    <link rel="stylesheet" href="./assets/style.css">
+
+  </head>
+  <body>
+    <div id= "welcome" class="welcome">
+        <!--Heading that will be shown before you start actual quiz-->
+      <h1>Welcome to the javascript coding quiz! Questions are in random order, and may be repeated. Your score will be the number of seconds remaining. Good Luck! </h1>
+      <!--Button that you will click to start thequiz-->
+      <button id="welcomeButton" type="button">
+        Start
+      </button>
+    </div>
+    <!--Botton placed for questions / originally hidden-->
+    <div id= buttonContainer class="buttonContainer hidden">
+      <p></p>
+    </div>
+<!--Timer placed for quiz-->
+<div id="timer" class="timer">
+  <p></p>
+</div>
+<!--Message that will be seen at if question is answered correctly, will not show until correct answer is clicked-->
+<div class="correct hidden"> 
+<p>Correct, you got it right!</p>
+</div>
+<!--Message that will be seen if question is answered incorrectly, will not show until incorrect answer is clicked-->
+<div class="wrong hidden"> 
+  <p>Sorry, that's not correct, 10 seconds have been subtracted</p>
+</div> 
+
+<div id="scores" class="scores hidden">
+  <p></p>
+</div>
+<!--Message that shows when the game is completly over-->
+<div id="gameOver" class="gameOver hidden">
+  <p>Game Over!  Thanks for playing!</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./assets/script.js"></script>
+  </body>
+</html>
